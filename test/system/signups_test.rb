@@ -22,7 +22,7 @@ class SignupsTest < ApplicationSystemTestCase
 
     click_on "Cadastrar"
 
-    assert_text "Falha ao realizar o cadastro..."
+    assert_text "Erro ao salvar"
   end
   
 end
