@@ -4,5 +4,5 @@ class User < ApplicationRecord
   has_secure_password
 
   validates :name, presence: true
-  validates :email, format: {with: EMAIL_FORMAT}
+  validates :email, format: {with: EMAIL_FORMAT}, uniqueness: true
 end

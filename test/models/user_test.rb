@@ -25,4 +25,12 @@ class UserTest < ActiveSupport::TestCase
 
     refute user.errors[:email].any?
   end
+
+  test "email é único" do
+    user = User.create!(name: "User test", email:"test@test.com", password: "secret", password_confirmation: "secret")
+
+    other_user = User.create(email: "test@test.com")
+
+    assert other_user.errors[:email].any?
+  end
 end
