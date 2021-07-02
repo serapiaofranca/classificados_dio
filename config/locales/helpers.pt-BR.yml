@@ -4,3 +4,5 @@ pt-BR:
       login: "Entrar"
       user: 
         create: "Cadastrar"
+      ad:
+        create: "Novo anúncio"
