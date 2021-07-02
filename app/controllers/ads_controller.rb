@@ -13,6 +13,19 @@ class AdsController < ApplicationController
         end
     end
 
+    def edit
+        @ad = current_user.ads.find(params[:id])
+    end
+
+    def update
+        @ad = current_user.ads.find(params[:id])
+        if @ad.update(ad_params)
+            redirect_to root_path, notice: "Anúncio alterado com sucesso"
+        else
+            render :edit
+        end
+    end
+
     private
 
     def ad_params
