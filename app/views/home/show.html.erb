@@ -1,5 +1,13 @@
-<h1>Página Home</h1>
+<h1>Anúncios DIO Classificados</h1>
 
-<p>
-    Aqui vai o conteúdo da Página Home
-</p>
+<div>
+    <ul>
+        <% @ads.each do |ad| %>
+          <li>  
+            <p> <strong><%= ad.title%> </strong> </p>
+            <p> <%= ad.description%> </p>
+            <p> <%= ad.prince%> </p>
+          </li>
+        <% end %>        
+    </ul>
+</div>
