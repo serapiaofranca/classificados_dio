@@ -1,0 +1,4 @@
+pt-BR:
+  notification_mailer:
+    welcome:
+      subject: "Bom vindo ao Dio Classificados"
