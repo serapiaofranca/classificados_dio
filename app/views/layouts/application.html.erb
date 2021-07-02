@@ -16,7 +16,13 @@
       <%= flash.notice %>
     </p>
     <nav>
-      <%= link_to translate("menu.signup"), new_user_path %>
+      <% if user_signed_in? %>
+        <h1> User Logged in </h1>
+      <% else %>
+        <%= link_to translate("menu.signup"), new_user_path %>
+        <%= link_to t("menu.signin"), new_session_path %>
+      <% end %>
+      
     </nav>
     <%= yield %>
   </body>

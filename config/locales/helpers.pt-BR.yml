@@ -1,5 +1,6 @@
 pt-BR:
   helpers:
     submit:
+      login: "Entrar"
       user: 
         create: "Cadastrar"
