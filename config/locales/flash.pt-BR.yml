@@ -3,6 +3,8 @@ pt-BR:
     create:
       welcome: "Bem vindo %{name}"
       invalid_credentials: "E-mail ou senha invalidos"
+    destroy:
+      session_finished: "Sessão finalizada"
   users:
     create:
       success: "Cadastro realizado com sucesso!"

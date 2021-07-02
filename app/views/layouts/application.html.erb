@@ -18,7 +18,7 @@
     </p>
     <nav>
       <% if user_signed_in? %>
-        <h1> User Logged in </h1>
+        <%= button_to t("menu.logout"), sign_out_sessions_path, method: :delete %>
       <% else %>
         <%= link_to translate("menu.signup"), new_user_path %>
         <%= link_to t("menu.signin"), new_session_path %>
